@@ -1,0 +1,130 @@
+.content{
+  background: url("../../img/about_us.jpeg") center top no-repeat #000;
+  background-size:cover;
+  background-position:center;
+  min-width: 100vh;
+  max-width: 100%;
+  height: 760px;
+}
+.content__wrap{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 500px));
+}
+
+.content__link{
+  grid-column: span 1;
+  margin-top: 30px;
+  margin-bottom: 85px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 200px;
+  font-weight: 900;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: url("../../img/image1.jpeg") no-repeat #000;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.content__link:nth-child(2){
+  background-image: url("../../img/image2.jfif");
+}
+.content__link:nth-child(3){
+  background-image: url("../../img/image3.jfif");
+}
+.content__link:nth-child(4){
+  background-image: url("../../img/image4.jpeg");
+}
+.content__link:nth-child(5){
+  background-image: url("../../img/image5.jpg");
+}
+.content__link:nth-child(6){
+  background-image: url("../../img/image6.jpeg");
+}
+
+
+.content_name{
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  transition-duration: 500ms;
+  transition-property: color;
+}
+
+.content__link:hover .content_name{
+  color: #f84545;
+}
+
+.content__text{
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-right:30px;
+  text-align:center;
+}
+
+@media (max-width:1450px) {
+  .content_name{
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width:1280px) {
+  .content__text{
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-right:20px;
+  }
+}
+
+  @media (max-width:1050px) {
+    .content__wrap{
+      grid-template-columns: repeat(3, minmax(100px, 500px));
+    }
+    .content{
+      height: 1060px;
+    }
+    .content__text{
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      text-align:50%;
+    }
+  }
+
+  @media (max-width:810px) {
+    .content__wrap{
+      grid-template-columns: repeat(2, minmax(100px, 500px));
+    }
+
+    .content__text{
+      font-size: 25px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+    .content{
+      height: 1060px;
+    }
+  }
+
+  @media (mix-width:570px) {
+    .content__wrap{
+      grid-template-columns: 1fr;
+    }
+    .content__link{
+      grid-column: 1 / -1;
+      padding-top: 1%;
+    }
+    .content{
+      min-width: 100vh;
+      height: 3060px;
+    }
+  }

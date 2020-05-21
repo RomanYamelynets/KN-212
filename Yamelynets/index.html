@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Next</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/blocks/light.css" id="theme-link">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header__wrap wrap">
+      <div class="header__top">
+        <div class="header__logo logo">
+          <a class="logo__link" href="index.html">
+            NEXT
+          </a>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Тренування</a>
+              <ul class="navbar_list">
+                <li><a class="navbar_link" href="#" onclick="Click()">Груди</a></li>
+                <li><a class="navbar_link" href="#">Спина</a></li>
+                <li><a class="navbar_link" href="#">Тріцепс</a></li>
+                <li><a class="navbar_link" href="#">Біцепс</a></li>
+                <li><a class="navbar_link" href="#">Прес</a></li>
+                <li><a class="navbar_link" href="#">Ноги</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Харчування</a>
+              <ul class="navbar_list">
+                <li><a class="navbar_link" href="#">Для маси</a></li>
+                <li><a class="navbar_link" href="#">Для похудання</a></li>
+                <li><a class="navbar_link" href="table.html">Табл.Калорійності</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about_us">Про нас</a>
+            </li>
+            <div class="theme-button" id="theme-button">Dark/White</div>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__info">
+        <h1 class="header__title">ТРЕНУВАННЯ <br>В ДОМАШНІХ УМОВАХ</h1>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="content" id="content">
+    <h1 class="header__title">ТРЕНУВАННЯ</h1>
+    <div class="content__wrap wrap">
+      <a class="content__link" href="#">
+        <span class="content_name">Груди</span>
+      </a>
+      <a class="content__link" href="#">
+        <span class="content_name" onmouseover="Onmousecounter(this)">Спина</span>
+      </a>
+      <a class="content__link" href="#">
+        <span class="content_name">Тріцепс</span>
+      </a>
+      <a class="content__link" href="#">
+        <span class="content_name">Біцепс</span>
+      </a>
+      <a class="content__link" href="#">
+        <span class="content_name">Прес</span>
+      </a>
+      <a class="content__link" href="#">
+        <span class="content_name">Ноги</span>
+      </a>
+    </div>
+
+  </main>
+
+  <main class="food" id="food">
+    <h1 class="header__title">Харчування</h1>
+    <pre class="food__text">
+      <h1>Харчування <br>для набору м'язової <br>маси і сушки</h1>
+      Раціон на сушіння і маси включає
+      в себе більш ніж 350 страв з відео-рецептами
+      для сніданку, обіду і вечері.
+    </pre>
+    <div class="food__wrap wrap">
+      <a class="food__link" href="#">
+        <span class="food_name">Для набору маси</span>
+      </a>
+      <a class="food__link" href="#">
+        <span class="food_name">Для похудання</span>
+      </a>
+    </div>
+  </main>
+
+  <section class="about_us" id="about_us">
+    <div class="aboutus_wrap wrap">
+      <div class="aboutus__info">
+        <h1 class="aboutus__title">ПРОГРАМА NEXT</h1>
+        <pre class="aboutus__text">
+Next це програму тренувань у домашніх умовах.
+
+«NEXT» включає в себе все, що тобі потрібно
+для вирішення цих проблем.
+Починаючи від потужної тренувальної системи
+прогресу без додаткового обладнання до плану
+харчування з відео-рецептами.
+        </pre>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <div class="header__info">
+      <h1 class="header__title">Контакти</h1>
+      <form class="contact_form" onsubmit="Onsubmitform(); return false">
+        <input type="text"  id="text" placeholder="Ваше ім'я *"  required />
+        <input type="email" id="email" placeholder="Ваш email *" required />
+        <textarea id="message" placeholder="Ваше повідомлення *"></textarea>
+        <div class="submit">
+          <input  type="submit" name="submit" id="submit" value="Відправити">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrap wrap">
+      <nav class="footer__menu menu menu--black">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">&copy;Next</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#content">Тренування</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#food">Харчування</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about_us">Про нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

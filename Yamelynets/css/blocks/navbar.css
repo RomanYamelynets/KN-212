@@ -1,0 +1,20 @@
+.navbar_list{
+  position: absolute;
+  min-width: 150px;
+  list-style: none;
+  display: none;
+}
+.navbar_link{
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+.navbar_link:hover, .navbar_link:active, .navbar_link:focus{
+  color: #f84545;
+}
+.menu__item:hover > .navbar_list{
+  display: block;
+}

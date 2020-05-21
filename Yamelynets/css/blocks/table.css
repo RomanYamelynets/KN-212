@@ -1,0 +1,18 @@
+table{
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #000;
+  color: #fff;
+  border: 16px solid #000;
+  border-radius: 20px;
+}
+
+th{
+  font-size: 18px;
+  padding: 10px;
+}
+td{
+  background: red;
+  padding: 10px;
+}
